@@ -1,0 +1,14 @@
+.scroll-to-top {
+    color: $secondary;
+    position: fixed;
+    border-radius: 0.1rem;
+    bottom: 3vh;
+    right: 3vh;
+    line-height: 1.5rem;
+    transition: opacity 1s;
+    transition: .4s ease;
+    background-color: $accent;
+    &:hover {
+        background-color: $secondary;
+    }
+}

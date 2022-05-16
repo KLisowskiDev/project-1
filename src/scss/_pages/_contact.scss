@@ -1,0 +1,49 @@
+.contact {
+    &__heading {
+        letter-spacing: .15rem;
+    }
+    &__information {
+        border: 5px solid $bgColorLight;
+        padding: 2rem;
+    }
+
+    &__contact-links {
+        list-style-type: none;
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 2rem;
+
+        @include media-breakpoint-up(md) {
+            padding-left: 3rem;
+        }
+    }
+
+    &__icon {
+        padding-right: 0.5rem;
+    }
+
+    &__contact-link {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        justify-content: center;
+
+        @include media-breakpoint-up(md) {
+            justify-content: flex-start;
+        }
+    }
+}
+
+.contact__button {
+    &::before {
+    display: block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f007";
+
+    }
+}

@@ -1,0 +1,12 @@
+.gallery {
+    &__single-image {
+        transition: transform .4s linear;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__image {
+        cursor: pointer;
+    }
+}

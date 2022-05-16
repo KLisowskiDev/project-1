@@ -1,0 +1,33 @@
+.cta {
+    padding: 2em 0;
+    text-align: center;
+
+    @include media-breakpoint-up(xl) {
+        text-align: left;
+    }
+
+    &__heading {
+        color: $secondary;
+        display: block;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 0.1em;
+        text-transform: uppercase;
+
+        @include media-breakpoint-up(xxl) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__subheading {
+        color: $white;
+        font-size: 1.5rem;
+        display: block;
+        padding-bottom: 2rem;
+
+        @include media-breakpoint-up(xxl) {
+            font-size: 2.2rem;
+        }
+    }
+
+}

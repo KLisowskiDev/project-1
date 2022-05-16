@@ -1,0 +1,19 @@
+.adventages {
+
+    &__single {
+        min-width: 250px;
+        max-width: 320px;
+
+        @include media-breakpoint-up(lg) {
+            min-width: 200px;
+        }
+    }
+
+    &__heading {
+        color: $secondary;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 1.5rem 0 1rem;
+        text-transform: uppercase;
+    }
+}

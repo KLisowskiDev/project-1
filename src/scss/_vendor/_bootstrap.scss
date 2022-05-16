@@ -1,0 +1,121 @@
+@import "bootstrap/scss/functions";
+
+// custom variables
+$secondary: #273747;
+$bgColorLight: #f2f2f2;
+$bgColorMain: #f9f9f9;
+$accent: #b5cde5;
+$white: #ffffff;
+$copyrightsColor: #999999;
+$footerColor: #222222;
+$colorLight: #c2c2c2;
+$colorHeading: #666666;
+$baseColorFont: #6a6a6a;
+
+// base
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-base: $font-family-sans-serif;
+$headings-font-family: 'PT Sans', sans-serif;
+$font-size-base: 1rem;
+$font-weight-base: 400;
+$line-height-base: 1.3;
+
+// nav
+$navbar-padding-y: 2rem;
+$nav-link-font-weight: 600;
+$nav-link-transition: .4s ease;
+$nav-link-hover-color: $accent;
+
+// Contact Form
+$input-bg: #f2f2f2;
+$input-border-color: #f2f2f2;
+$input-focus-border-color: $accent;
+$input-focus-box-shadow: none;
+$input-padding-x: 1rem;
+$input-padding-y: 1rem;
+$form-label-margin-bottom: 0;
+$form-label-font-size: .875rem;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1650px
+);
+
+
+$font-sizes: (1: 3.75rem,
+    2: 2.5rem,
+    3: 1.5rem,
+    4: 1.225rem,
+    5: 1rem,
+    6: .875rem,
+    7: 2rem) !default;
+
+$display-font-sizes: (1: 2.25rem, // h1
+    2: 1.5rem, // h2
+    3: 4rem,
+    4: 2rem,
+    5: 1rem,
+) !default;
+
+$display-font-weight: 700;
+$display-line-height: 1.45;
+
+$font-weight-bold: 600;
+$border-color: $accent;
+$border-radius: 0;
+
+$line-height-base: 1.45;
+$line-height-sm: 1.2;
+$line-height-lg: 1.8;
+
+
+// link
+$link-color: #f2f2f2;
+$link-hover-color: $accent;
+
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+// Layout & components - include what u need
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+// @import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+//@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+// @import "bootstrap/scss/card";
+@import "bootstrap/scss/accordion";
+// @import "bootstrap/scss/breadcrumb";
+// @import "bootstrap/scss/pagination";
+// @import "bootstrap/scss/badge";
+@import "bootstrap/scss/alert";
+// @import "bootstrap/scss/progress";
+// @import "bootstrap/scss/list-group";
+// @import "bootstrap/scss/close";
+// @import "bootstrap/scss/toasts";
+// @import "bootstrap/scss/modal";
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/popover";
+// @import "bootstrap/scss/carousel";
+// @import "bootstrap/scss/spinners";
+// @import "bootstrap/scss/offcanvas";
+
+// Helpers
+@import "bootstrap/scss/helpers";
+
+// Utilities
+@import "bootstrap/scss/utilities/api";

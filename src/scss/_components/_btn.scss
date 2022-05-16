@@ -1,0 +1,60 @@
+.button {
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 1rem;
+    text-transform: uppercase;
+    transition: .4s ease;
+
+    &--primary {
+        color: $secondary;
+        background-color: $accent;
+
+        &:hover {
+            color: $white;
+            background-color: transparent;
+            border-color: $white;  
+        }
+    }
+
+    &--secondary {
+        color: $white;
+        background-color: $secondary;
+        
+        &:hover {
+            color: $white;
+            background-color: transparent;
+            border-color: $white;
+        }
+    }
+
+    &--white {
+        color: $secondary;
+        background-color: $white;
+
+        &:hover {
+            color: $white;
+            background-color: transparent;
+            border-color: $white;
+        }
+    }
+
+    &--large {
+        font-size: 1.2rem;
+
+        @include media-breakpoint-up(xxxl) {
+            font-size: 1.3rem;
+        }
+    }
+
+    &--dark {
+        color: $white;
+        background-color: $secondary;
+
+        &:hover {
+            color: $secondary;
+            border-color: $secondary;
+            background-color: transparent;
+        }
+    }
+}

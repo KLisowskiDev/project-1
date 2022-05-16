@@ -1,0 +1,62 @@
+.section {
+    padding: 2rem 0;
+
+    @include media-breakpoint-up(md) {
+        padding: 4rem 0;
+    }
+    
+    &__heading {
+        color: $secondary;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 4rem;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 6rem;
+        }
+        
+        &--fancy { 
+            &::before,
+            &::after {
+                content: "";
+                left: 50%;
+                bottom: -2rem;         
+                height: 0.7rem;
+                position: absolute;
+                width: 2rem;
+            }
+            &::before {
+                background-color: $accent;
+            }
+            &::after {
+                background-color: $secondary;
+                margin-left: -2rem;
+            }
+        }
+
+        &--white {
+            color: $white;
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__intro {
+        color: $secondary;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+
+    &--dark {
+        background-color: $secondary;
+    }
+
+    &--accent {
+        color: $secondary;
+        background-color: $accent;
+    }
+}
+

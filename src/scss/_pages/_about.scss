@@ -1,0 +1,20 @@
+.about {
+    &__box {
+        transition: 1s ease;
+        &:hover {
+            transform: translate(0px, -15px);
+            .about__icon {
+                color: $white;
+                background-color: $secondary;
+            }
+        }
+    }
+    &__icon {
+        background-color: $accent;
+        transition: 1s ease;
+    }
+    &__heading {
+        margin-top: 0.8rem;
+        color: $baseColorFont;
+    }
+}

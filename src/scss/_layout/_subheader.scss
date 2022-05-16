@@ -1,0 +1,40 @@
+.subheader {
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center right;
+    text-align: center;
+    height: 400px;
+
+    @include media-breakpoint-up(lg) {
+        text-align: left;
+    }
+
+    &__content {
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 2rem;
+
+        @include media-breakpoint-up(lg) {
+            background-color: transparent;
+            padding: 0;
+        }
+    }
+
+    &__title {
+        font-size: 3rem;
+        text-transform: uppercase;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 5rem;
+        }
+    }
+
+    &__breadcrumbs {
+        font-size: 1rem;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.2rem;
+        }
+    }
+}

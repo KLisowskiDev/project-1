@@ -1,0 +1,66 @@
+@mixin for-extra-small {
+    @media (min-width: $xs) {
+        @content;
+    }
+}
+
+@mixin for-small {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin for-medium {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin for-large {
+    @media (min-width: $lg) {
+        @content;
+    }
+}
+
+// ścieżka do plików img
+@function image-url($name) {
+    $imagesPath: "../images/" !default;
+    @return url(#{$imagesPath}#{$name});
+}
+
+@mixin image($url-image) {
+     background-image: image-url($url-image);
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+// animate mobile menu
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+

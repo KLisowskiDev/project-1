@@ -1,0 +1,124 @@
+.nav {
+    transition: all .4s ease;
+    &__menu {
+        @include for-small {
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: $secondary;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+    }
+
+    &__link {
+        @include media-breakpoint-up(md) {
+            font-size: 0.8rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1rem;
+        }
+    }
+
+    &__btn {
+        border: 1px solid $accent;
+        background-color: $accent;
+        top: 3vh;
+        right: 3vh;
+        z-index: 9999;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    &__item {
+        padding: 0 0.3rem;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        @include media-breakpoint-up(lg) {
+            padding: 0 0.75rem;
+        }
+
+        .active {
+            @include for-medium {
+                &::after,
+                &::before {
+                    content: "";
+                    left: 50%;
+                    transform: translate(0, -50%);
+                    bottom: -15px;
+                    height: 5px;
+                    position: absolute;
+                    width: 15px;
+                }
+                &::after {
+                    background-color: $secondary;
+                    margin-left: -15px;
+                }
+
+                &::before {
+                    background-color: $accent;
+
+                }
+            }
+        }
+    }
+}
+
+.sticky {
+    @include for-medium {
+        position: fixed;
+        top: 0;
+        border-bottom: 2px solid $accent;
+        background-color: $white;
+        margin: 0 auto;
+        padding: 2rem 0;
+        width: 100%;
+        z-index: 99;
+    }
+}
+
+.fadeIn {
+    @include for-small {
+        .nav {
+            &__menu {
+                animation-duration: 1s;
+                animation-name: fadeInDown;
+                display: flex;
+            }
+
+            &__link {
+                display: block;
+                font-size: 1.5rem;
+                color: $white;
+                width: 100%;
+            }
+            &__item {
+                display: block;
+                text-align: center;
+                width: 100%;
+                .active {
+                    color: $accent;
+                }
+            }
+        }
+    }
+}
+
+.fadeOut {
+    @include for-small {
+        .nav__menu {
+            transition: all 1s ease-in-out;
+            display: none;
+        }
+    }
+}

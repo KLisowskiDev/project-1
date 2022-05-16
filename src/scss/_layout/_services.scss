@@ -1,0 +1,14 @@
+.services {
+
+    &__image {
+        border-bottom: 0.4rem solid $accent;
+    }
+
+    &__heading {
+        color: $secondary;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 1rem 0;
+        text-transform: uppercase;
+    }
+}
